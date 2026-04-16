@@ -1,0 +1,456 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="向山 恭平の自己紹介・スキル・実績をまとめたポートフォリオサイト" />
+    <title>KYOHEI.MUKAIYAMA2026 | 向山 恭平</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">本文へスキップ</a>
+
+    <header class="site-header" id="top">
+      <div class="container header-inner">
+        <a class="brand" href="#top" aria-label="KYOHEI.MUKAIYAMA2026 トップへ">
+          <span class="brand-mark" aria-hidden="true">
+            <svg class="brand-mark-svg" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <defs>
+                <linearGradient id="brandStroke" x1="4" y1="3" x2="20" y2="21" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#d4bc7a" />
+                  <stop offset="0.5" stop-color="#a68b52" />
+                  <stop offset="1" stop-color="#6b5a45" />
+                </linearGradient>
+                <linearGradient id="brandFace" x1="12" y1="4" x2="12" y2="20" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#ffffff" stop-opacity="0.14" />
+                  <stop offset="1" stop-color="#ffffff" stop-opacity="0.02" />
+                </linearGradient>
+              </defs>
+              <path
+                d="M12 3.2L19.2 11.2L12 19.2L4.8 11.2L12 3.2Z"
+                stroke="url(#brandStroke)"
+                stroke-width="1.15"
+                fill="url(#brandFace)"
+              />
+              <path d="M12 7.2L15.6 11.2L12 15.2L8.4 11.2L12 7.2Z" stroke="url(#brandStroke)" stroke-opacity="0.35" stroke-width="0.75" fill="none" />
+            </svg>
+          </span>
+          <span class="brand-text brand-site">KYOHEI.MUKAIYAMA2026</span>
+          <span class="brand-plane" aria-hidden="true">
+            <svg class="brand-plane-svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z" />
+            </svg>
+          </span>
+        </a>
+
+        <nav class="nav" aria-label="サイト内ナビゲーション">
+          <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="navLinks">
+            メニュー
+          </button>
+          <ul class="nav-links" id="navLinks">
+            <li><a href="#about">About</a></li>
+            <li><a href="#strengths">Strengths</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#works">Works</a></li>
+            <li><a href="#documents">Docs</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero">
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <p class="badge">Implementation-focused Data Analyst / Engineer</p>
+            <h1 class="hero-title">
+              <span class="accent">向山 恭平</span>の自己紹介ポートフォリオです。
+            </h1>
+            <p class="hero-lead">
+              Power Query（Excel） / JavaScript / Python を駆使し、10万件規模のデータ処理や業務自動化をスポットで解決します。
+              開発スキルと現場の業務改善を掛け合わせ、「いま人手が足りない」「まず自動化したい」を技術で埋めます。
+            </p>
+
+            <div class="hero-actions">
+              <a class="btn primary" href="#contact">カジュアルに相談する</a>
+              <a class="btn btn-outline" href="#works">実績・制作物を見る</a>
+              <button class="btn btn-outline" type="button" id="copyEmailBtn">
+                メールをコピー
+              </button>
+            </div>
+
+            <div class="hero-meta" aria-label="プロフィール要約">
+              <div class="meta-item">
+                <div class="meta-label">拠点</div>
+                <div class="meta-value">Aichi Prefecture, Japan</div>
+              </div>
+              <div class="meta-item">
+                <div class="meta-label">得意領域</div>
+                <div class="meta-value">自動化 / データ整形 / 改善</div>
+              </div>
+              <div class="meta-item">
+                <div class="meta-label">更新</div>
+                <div class="meta-value"><span id="lastUpdated">--</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-card" role="region" aria-label="プロフィールカード">
+            <div class="avatar" aria-hidden="true">
+              <div class="avatar-inner">KM</div>
+            </div>
+            <div class="card-subtitle">実装型データアナリスト / エンジニア</div>
+
+            <dl class="quick-facts">
+              <div>
+                <dt>得意</dt>
+                <dd>Power Query / Python / JavaScript</dd>
+              </div>
+              <div>
+                <dt>対応</dt>
+                <dd>単発・スポット / 改修・運用</dd>
+              </div>
+              <div>
+                <dt>目標</dt>
+                <dd>現場が止まらない仕組み作り</dd>
+              </div>
+            </dl>
+
+            <div class="social">
+              <a class="chip chip-site" href="#top">KYOHEI.MUKAIYAMA2026</a>
+              <a
+                class="chip"
+                href="https://www.linkedin.com/in/kyohei-mukaiyama-978016282"
+                target="_blank"
+                rel="noopener noreferrer"
+                >LinkedIn</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="container">
+          <div class="section-head">
+            <h2>About</h2>
+            <p>自己紹介と、現場で価値を出す考え方。</p>
+          </div>
+
+          <div class="grid two">
+            <div class="panel">
+              <h3>プロフィール</h3>
+              <p class="prose-profile">
+                はじめまして、閲覧いただきありがとうございます。<br />
+                向山 恭平です。
+              </p>
+              <p class="prose-profile">
+                Java / Python / JavaScript を用いた「システム開発」と、<br />
+                Power Query / VBA を用いた「データクリーニング・業務改善」を掛け合わせ、<br />
+                企業の “いま足りない” を技術で埋める活動をしています。
+              </p>
+              <p class="prose-profile">
+                「何をどう自動化すればいいか分からない」状態でも問題ありません。<br />
+                抽象的な課題感から整理し、最短距離で成果に繋がる形に落とし込みます。
+              </p>
+            </div>
+            <div class="panel">
+              <h3>過去の経験業界</h3>
+              <ul class="list">
+                <li>医療関連</li>
+                <li>建設・不動産</li>
+                <li>旅行・宿泊・レジャー</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="strengths">
+        <div class="container">
+          <div class="section-head">
+            <h2>Strengths</h2>
+            <p>「作って終わり」にしない、伸びる運用まで。</p>
+          </div>
+
+          <div class="cards strengths">
+            <article class="work-card">
+              <div class="work-top">
+                <h3 class="work-title">1. データ戦略</h3>
+                <p class="work-desc">「作業」を自動化し、「分析」で付加価値を出す。</p>
+              </div>
+              <ul class="tags" aria-label="主な手段">
+                <li>Power Query</li>
+                <li>Python</li>
+              </ul>
+              <p class="muted">
+                集計はスタート地点。自動化で捻出した時間を、次の一手の提案に投資します。
+              </p>
+            </article>
+
+            <article class="work-card">
+              <div class="work-top">
+                <h3 class="work-title">2. システム進化</h3>
+                <p class="work-desc">現場の変化に即応し、ツールを磨き続ける。</p>
+              </div>
+              <ul class="tags" aria-label="主な手段">
+                <li>JavaScript</li>
+                <li>HTML/CSS</li>
+              </ul>
+              <p class="muted">
+                小さなストレスを素早く拾い、継続的な改善で “いまのベスト” を保ちます。
+              </p>
+            </article>
+
+            <article class="work-card">
+              <div class="work-top">
+                <h3 class="work-title">3. 攻めの運用</h3>
+                <p class="work-desc">止まらない、古くならない仕組み作り。</p>
+              </div>
+              <ul class="tags" aria-label="主な手段">
+                <li>改修</li>
+                <li>最適化</li>
+              </ul>
+              <p class="muted">
+                前任の仕組みも “使える形” に再生。環境変化に合わせて調整し続けます。
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="skills">
+        <div class="container">
+          <div class="section-head">
+            <h2>Skills</h2>
+            <p>得意領域・ご経験スキルを役割別に整理。</p>
+          </div>
+
+          <div class="grid two">
+            <div class="panel">
+              <h3>データアナリスト（実装）</h3>
+              <div class="skill-badges" role="list">
+                <span class="pill" role="listitem">Python（2年）</span>
+                <span class="pill" role="listitem">Power Query（Excel）</span>
+                <span class="pill" role="listitem">10万件データ処理</span>
+                <span class="pill" role="listitem">業務自動化</span>
+              </div>
+            </div>
+            <div class="panel">
+              <h3>エンジニア</h3>
+              <div class="skill-badges" role="list">
+                <span class="pill" role="listitem">JavaScript（3年）</span>
+                <span class="pill" role="listitem">jQuery（3年）</span>
+                <span class="pill" role="listitem">HTML（2年）</span>
+                <span class="pill" role="listitem">CSS（3年）</span>
+                <span class="pill" role="listitem">Java</span>
+              </div>
+            </div>
+            <div class="panel">
+              <h3>デザイナー</h3>
+              <div class="skill-badges" role="list">
+                <span class="pill" role="listitem">UI設計（2年）</span>
+                <span class="pill" role="listitem">UXアプローチ（1年）</span>
+              </div>
+            </div>
+            <div class="panel">
+              <h3>ディレクター</h3>
+              <div class="skill-badges" role="list">
+                <span class="pill" role="listitem">アプリ（その他）（2年）</span>
+                <span class="pill" role="listitem">UXアプローチ（1年）</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="works">
+        <div class="container">
+          <div class="section-head">
+            <h2>Works</h2>
+            <p>スポット解決〜運用改善まで。カードは差し替えて使えます。</p>
+          </div>
+
+          <div class="cards">
+            <article class="work-card">
+              <div class="work-top">
+                <h3 class="work-title">10万件データ処理の自動化</h3>
+                <p class="work-desc">集計・整形・エラー抑止を含めて運用できる形へ。</p>
+              </div>
+              <ul class="tags" aria-label="技術スタック">
+                <li>Power Query</li>
+                <li>Python</li>
+                <li>Excel</li>
+              </ul>
+            </article>
+
+            <article class="work-card">
+              <div class="work-top">
+                <h3 class="work-title">現場要望の即応カスタマイズ</h3>
+                <p class="work-desc">変更に強い設計で、改善を積み重ねる運用に。</p>
+              </div>
+              <ul class="tags" aria-label="技術スタック">
+                <li>JavaScript</li>
+                <li>jQuery</li>
+                <li>HTML/CSS</li>
+              </ul>
+            </article>
+
+            <article class="work-card">
+              <div class="work-top">
+                <h3 class="work-title">既存資産の改修・最適化</h3>
+                <p class="work-desc">前任の仕組みを “使える形” に再生し、止まらない運用へ。</p>
+              </div>
+              <ul class="tags" aria-label="技術スタック">
+                <li>保守</li>
+                <li>最適化</li>
+                <li>改善</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="documents">
+        <div class="container">
+          <div class="section-head">
+            <h2>Documents</h2>
+            <p>職務経歴書・スキルシート（PDF）をご覧いただけます。</p>
+          </div>
+
+          <div class="documents-panel">
+            <div class="panel">
+              <h3>職務経歴書・スキルシート</h3>
+              <p class="muted">
+                <a class="link" href="./assets/職務経歴書【向山 恭平】_26.4.7.pdf"
+                  >職務経歴書（PDF）を開く</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <div class="container">
+          <div class="section-head">
+            <h2>Contact</h2>
+            <p>連絡先のご案内と、フォームのデモ表示です。</p>
+          </div>
+
+          <div class="grid two">
+            <div class="panel">
+              <h3>連絡先</h3>
+              <p class="muted">
+                メール: <span class="mono" id="emailText">kyohei.mukaiyama.work@gmail.com</span>
+              </p>
+              <p class="muted">
+                サイト:
+                <span class="mono">KYOHEI.MUKAIYAMA2026</span>
+                <span class="sr-only">（このページ）</span>
+              </p>
+              <p class="muted">
+                SNS:
+                <a
+                  class="link"
+                  href="https://www.linkedin.com/in/kyohei-mukaiyama-978016282"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >LinkedIn（向山 恭平）</a
+                >
+              </p>
+              <p class="muted">
+                返信目安: 12時間以内（目安）
+              </p>
+            </div>
+
+            <form class="form form-luxury" id="contactForm" novalidate>
+              <p class="form-luxury-eyebrow">お問い合わせ（デモ）</p>
+              <p class="form-luxury-lead">
+                レイアウト用のサンプルです。入力内容は送信されません。ご連絡は左のメール・SNSからお願いします。
+              </p>
+              <p class="form-demo-badge">Demo</p>
+              <div class="field">
+                <label for="name">お名前</label>
+                <input id="name" name="name" type="text" autocomplete="name" />
+                <p class="field-hint" id="nameHint">例: 山田 太郎</p>
+              </div>
+
+              <div class="field">
+                <label for="email">メール</label>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                  inputmode="email"
+                />
+                <p class="field-hint" id="emailHint">例: hello@example.com</p>
+              </div>
+
+              <div class="field">
+                <label for="message">メッセージ</label>
+                <textarea id="message" name="message" rows="5"></textarea>
+                <p class="field-hint" id="messageHint">お問い合わせ内容をご記入ください。</p>
+              </div>
+
+              <div class="form-actions">
+                <button class="btn primary" type="submit" id="submitBtn">デモを試す</button>
+                <p class="form-note" id="formNote" role="status" aria-live="polite"></p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-copy">
+          <span class="footer-plane" aria-hidden="true">
+            <svg
+              class="footer-plane-svg"
+              width="15"
+              height="15"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z"
+              />
+            </svg>
+          </span>
+          <small>© <span id="year">----</span> KYOHEI.MUKAIYAMA2026 / 向山 恭平</small>
+        </div>
+        <a class="to-top" href="#top">ページ上部へ</a>
+      </div>
+    </footer>
+
+    <div class="modal" id="thanksModal" aria-hidden="true">
+      <div class="modal-backdrop" data-modal-close></div>
+      <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="thanksTitle">
+        <div class="modal-head">
+          <div class="modal-badge" aria-hidden="true">Demo</div>
+          <h2 class="modal-title" id="thanksTitle">デモ表示です</h2>
+        </div>
+        <p class="modal-text">
+          実際のメール送信は行っていません。<br />
+          ご連絡はページ内のメールアドレスまたは LinkedIn からお願いします。
+        </p>
+        <div class="modal-actions">
+          <button class="btn primary" type="button" data-modal-close>閉じる</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js" defer></script>
+  </body>
+</html>
